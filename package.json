@@ -1,0 +1,33 @@
+{
+  "name": "Vue-Gulp Template",
+  "version": "1.0.0",
+  "description": "dist\r \tvendor.js\r \tapp.js\r \tstyles.css\r source\r \tjs\r \t\tmain.js\r \t\tcomponents\r \t\t\t*.vue\r \tscss\r \t\t*scss\r index.html",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "browserify": "^14.1.0",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "vue": "^2.2.4",
+    "vueify": "^9.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vue","template"],
+  "author": "Dave Molinero",
+  "license": "ISC"
+}
