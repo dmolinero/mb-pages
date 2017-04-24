@@ -1,12 +1,9 @@
 var gulp = require('gulp');
-var fs = require('fs')
-var browserify = require('browserify')
-var vueify = require('vueify')
+var fs = require('fs');
 var sass = require('gulp-sass');
-var livereload = require('gulp-livereload');
-var concat = require('gulp-concat')
-var sourcemaps = require('gulp-sourcemaps')
-var babel = require('gulp-babel')
+var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
@@ -24,34 +21,23 @@ gulp.task('node-prod', function() {
     return process.env.NODE_ENV = 'production';
 });
 
-// Compile vue components and send output to JS folder folder
-gulp.task('vue', function(){
-	return browserify('./source/vue/main.js')
-	  .transform(vueify)
-	  .bundle()
-	  .pipe(fs.createWriteStream('./source/js/app.js'))
-});
-
 // Concat, minify, and convert ES6
-gulp.task('js', ['vue'], function() {
+gulp.task('js', function() {
 
 	if ( process.env.NODE_ENV == 'production' ) {
-		return gulp.src('./source/js/**/*js')
+		return gulp.src('./src/js/**/*.js')
 			.pipe(babel({
 	            presets: ['es2015']
 	        }))
-	        .pipe(concat('app.js'))
+	        .pipe(concat('scripts.js'))
 	        .pipe(uglify())
 			.pipe(gulp.dest('./dist'))
 	}
 
 	if ( process.env.NODE_ENV == 'development' ) {
-		return gulp.src('./source/js/**/*js')
+		return gulp.src('./src/js/**/*js')
 			.pipe(sourcemaps.init())
-			.pipe(babel({
-	            presets: ['es2015']
-	        }))
-	        .pipe(concat('app.js'))
+	        .pipe(concat('scripts.js'))
 	        .pipe(sourcemaps.write('.'))
 			.pipe(gulp.dest('./dist'))
 	}
@@ -78,22 +64,18 @@ gulp.task('sass', function () {
         ];
     }
 
-  return gulp.src('./source/scss/*.scss')
+  return gulp.src('./src/scss/*.scss')
   	.pipe(concat('styles.css'))
     .pipe(sass())
     .pipe(postcss(plugins))
     .pipe(gulp.dest('./dist'));
 
-}); 
-
-// Watch and compile automatically
-gulp.task('watch', function() {
-  livereload.listen();
-  gulp.watch('./source/scss/*.scss', ['sass']);
-  gulp.watch('./source/js/**/*.vue', ['js']);
-  gulp.watch('./source/js/**/*.js', ['js']);
 });
-
 
 gulp.task('build-dev', [ 'node-dev', 'js', 'sass' ]);
 gulp.task('build-prod', [ 'node-prod', 'js', 'sass', 'delmaps' ]);
+
+// Watch and compile automatically
+gulp.task('watch', function() {
+  return gulp.watch('./src/*', ['build-dev']);
+});
