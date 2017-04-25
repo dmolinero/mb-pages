@@ -69,7 +69,6 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(postcss(plugins))
     .pipe(gulp.dest('./dist'));
-
 });
 
 // Main tasks to use

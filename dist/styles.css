@@ -1,35 +1,4 @@
 /*************************************************
-BASIC LAYOUT
-*************************************************/
-section {
-  border-bottom: 1px solid #ccc; }
-
-@media (min-width: 767px) {
-  .columns {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; } }
-
-.col, .col-1, .col-2 {
-  width: 100%;
-  display: block;
-  float: left;
-  vertical-align: middle; }
-  @media (min-width: 767px) {
-    .col, .col-1, .col-2 {
-      width: 48%; } }
-
-@media (min-width: 767px) {
-  .col-1 {
-    margin-right: 4%; } }
-
-.bold {
-  font-weight: 500; }
-
-/*************************************************
 INDIVIDUAL SECTIONS
 *************************************************/
 #go-faqs-hero {
@@ -73,7 +42,7 @@ INDIVIDUAL SECTIONS
       display: inline-block; } }
 
 #go-faqs {
-  padding: 4em 0 6em 0; }
+  padding: 2em 0 6em 0; }
   #go-faqs p {
     margin-top: 1em; }
   #go-faqs h3 {
@@ -95,6 +64,37 @@ INDIVIDUAL SECTIONS
       font-size: 3em; }
     #questions p {
       font-size: 1.5em; } }
+
+/*************************************************
+BASIC LAYOUT
+*************************************************/
+section {
+  border-bottom: 1px solid #ccc; }
+
+@media (min-width: 767px) {
+  .columns {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+.col, .col-1, .col-2 {
+  width: 100%;
+  display: block;
+  float: left;
+  vertical-align: middle; }
+  @media (min-width: 767px) {
+    .col, .col-1, .col-2 {
+      width: 48%; } }
+
+@media (min-width: 767px) {
+  .col-1 {
+    margin-right: 4%; } }
+
+.bold {
+  font-weight: 500; }
 
 .material-icons, img {
   vertical-align: middle; }
