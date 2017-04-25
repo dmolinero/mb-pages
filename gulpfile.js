@@ -64,7 +64,7 @@ gulp.task('sass', function () {
         ];
     }
 
-  return gulp.src('./src/scss/*.scss')
+  return gulp.src('./src/scss/**/*.scss')
   	.pipe(concat('styles.css'))
     .pipe(sass())
     .pipe(postcss(plugins))
@@ -72,10 +72,13 @@ gulp.task('sass', function () {
 
 });
 
+// Main tasks to use
 gulp.task('build-dev', [ 'node-dev', 'js', 'sass' ]);
 gulp.task('build-prod', [ 'node-prod', 'js', 'sass', 'delmaps' ]);
 
 // Watch and compile automatically
 gulp.task('watch', function() {
-  return gulp.watch('./src/*', ['build-dev']);
+   gulp.watch('./src/scss/*.scss', ['sass']);
+   gulp.watch('./src/scss/mb_default/*.scss', ['sass']);
+   gulp.watch('./src/js/*.js', ['build-dev']);
 });

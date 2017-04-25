@@ -1,40 +1,41 @@
 {
-  "name": "gulp-sass-babel",
+  "name": "marketing-page-boilerplate",
   "version": "1.0.0",
-  "description": "Basic boilerplate for gulp, sass, and babel",
+  "description": "Basic gulp, sass, babel boilerplate for static html pages",
   "main": "gulpfile.js",
   "dependencies": {
     "babel-core": "^6.24.1",
-    "autoprefixer": "^6.7.7",
-    "babel-preset-es2015": "^6.24.1",
     "cssnano": "^3.10.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^6.4.0",
+    "gulp-livereload": "^3.8.1",
+    "babel-preset-es2015": "^6.24.1",
     "gulp-sass": "^3.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-uglify": "^2.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "node-sass": "^4.5.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "gulp-babel": "^6.1.2",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-livereload": "^3.8.1"
+    "autoprefixer": "^6.7.7",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sourcemaps": "^2.6.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "test": "none"
   },
   "repository": {
     "type": "git",
     "url": "none"
   },
   "keywords": [
+    "medbridge",
     "gulp",
     "sass",
-    "scss",
-    "bable",
-    "es2015"
+    "babel",
+    "marketing",
+    "boilerplate"
   ],
   "author": "Dave Molinero",
-  "license": "ISC"
+  "license": "SEE LICENSE IN (NEED TO LINK)"
 }

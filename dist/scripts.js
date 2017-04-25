@@ -1,4 +1,2 @@
-const baby = "Hello World";
-
-alert(baby);
+let cat = "cat";
 //# sourceMappingURL=scripts.js.map
