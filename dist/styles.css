@@ -1,27 +1,71 @@
-/*************************************************
-INDIVIDUAL SECTIONS
-*************************************************/
-#go-faqs-hero {
-  background: url(img/faqs-hero.jpg);
-  padding: 4em 0; }
-  #go-faqs-hero h1 {
-    color: #fff;
-    font-size: 3em; }
+.go-resources #clinical-training-header {
+  padding: 4em 0em; }
+  @media (min-width: 767px) {
+    .go-resources #clinical-training-header h2 {
+      font-size: 3em;
+      margin-bottom: .33em; } }
+  @media (min-width: 767px) {
+    .go-resources #clinical-training-header p {
+      font-size: 1.25em;
+      font-weight: 300;
+      margin-top: .5em; } }
+  .go-resources #clinical-training-header img {
+    max-height: 400px;
+    display: none; }
+    @media (min-width: 767px) {
+      .go-resources #clinical-training-header img {
+        display: inline-block; } }
 
-#go-resources-menu {
+.go-resources [id^=how-it-works] {
+  padding: 0;
   background: #eaedee; }
-  #go-resources-menu menu {
-    padding: 2em 0 2em 0;
-    margin: 0; }
-  #go-resources-menu ul {
-    list-style: none;
-    padding: 0 2em 0 0;
-    margin: 0; }
-  #go-resources-menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 2em 0 0;
-    margin: 0; }
+  .go-resources [id^=how-it-works] .columns {
+    display: block; }
+  .go-resources [id^=how-it-works] .col-2 {
+    text-align: left; }
+  .go-resources [id^=how-it-works] img {
+    padding-top: 1em;
+    padding-right: 15%;
+    padding-bottom: 6em;
+    padding-left: 15%; }
+  .go-resources [id^=how-it-works] h4 {
+    margin-bottom: .5em;
+    color: #1e78d7; }
+
+.go-resources #how-it-works-1 {
+  border-bottom: 0;
+  padding-top: 6em; }
+
+.go-resources #patient-experience {
+  padding: 6em 0; }
+  .go-resources #patient-experience .container {
+    position: relative; }
+  .go-resources #patient-experience .experience-col {
+    text-align: center;
+    padding-bottom: 4em;
+    float: left; }
+    .go-resources #patient-experience .experience-col img {
+      padding: 0 25%;
+      margin-bottom: 2em; }
+    .go-resources #patient-experience .experience-col h4 {
+      color: #1e78d7; }
+    @media (min-width: 370px) {
+      .go-resources #patient-experience .experience-col {
+        width: 48%;
+        margin-right: 4%; }
+        .go-resources #patient-experience .experience-col:nth-child(even) {
+          margin-right: 0; } }
+    @media (min-width: 767px) {
+      .go-resources #patient-experience .experience-col {
+        text-align: left;
+        width: 23%;
+        margin-right: 2%; }
+        .go-resources #patient-experience .experience-col:nth-child(even) {
+          margin-right: 2%; }
+        .go-resources #patient-experience .experience-col img {
+          padding: 0 30% 0 0; } }
+  .go-resources #patient-experience a {
+    margin-bottom: 4em; }
 
 #go-faqs-header {
   padding: 4em 0em; }
@@ -34,13 +78,6 @@ INDIVIDUAL SECTIONS
       font-weight: 300;
       margin-top: .5em; } }
 
-#go-faqs-quotes {
-  max-height: 200px;
-  display: none; }
-  @media (min-width: 767px) {
-    #go-faqs-quotes {
-      display: inline-block; } }
-
 #go-faqs {
   padding: 2em 0 6em 0; }
   #go-faqs p {
@@ -48,53 +85,84 @@ INDIVIDUAL SECTIONS
   #go-faqs h3 {
     margin-top: 3em; }
 
-#questions {
-  padding: 6em 0em;
-  background: #eaedee; }
-  #questions h2 {
-    margin-bottom: .33em; }
-  #questions p span {
-    margin-right: 1em; }
-  #questions p span:last-child {
-    margin-right: 0; }
-  #questions i {
-    color: #1e78d7; }
-  @media (min-width: 767px) {
-    #questions h2 {
-      font-size: 3em; }
-    #questions p {
-      font-size: 1.5em; } }
-
-/*************************************************
-BASIC LAYOUT
+.go-resources {
+  /*************************************************
+GO RESOURCES HEADER
 *************************************************/
-section {
-  border-bottom: 1px solid #ccc; }
-
-@media (min-width: 767px) {
-  .columns {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; } }
-
-.col, .col-1, .col-2 {
-  width: 100%;
-  display: block;
-  float: left;
-  vertical-align: middle; }
+  /*************************************************
+GO RESOURCES MENU
+*************************************************/
+  /*************************************************
+Questions Section
+*************************************************/
+  /*************************************************
+GO RESOURCES BASIC LAYOUT
+*************************************************/ }
+  .go-resources #go-resources-hero {
+    background: url(img/faqs-hero.jpg);
+    padding: 4em 0; }
+    .go-resources #go-resources-hero h1 {
+      color: #fff;
+      font-size: 3em; }
+  .go-resources #go-resources-menu {
+    background: #eaedee; }
+    .go-resources #go-resources-menu menu {
+      padding: 2em 0 2em 0;
+      margin: 0; }
+    .go-resources #go-resources-menu ul {
+      list-style: none;
+      padding: 0 2em 0 0;
+      margin: 0; }
+    .go-resources #go-resources-menu li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 2em 0 0;
+      margin: 0; }
+  .go-resources #questions {
+    padding: 6em 0em;
+    background: #eaedee; }
+    .go-resources #questions h2 {
+      margin-bottom: .33em; }
+    .go-resources #questions p span {
+      margin-right: 1em; }
+    .go-resources #questions p span:last-child {
+      margin-right: 0; }
+    .go-resources #questions i {
+      color: #1e78d7; }
+    @media (min-width: 767px) {
+      .go-resources #questions h2 {
+        font-size: 3em; }
+      .go-resources #questions p {
+        font-size: 1.5em; } }
+  .go-resources section {
+    border-bottom: 1px solid #ccc; }
   @media (min-width: 767px) {
-    .col, .col-1, .col-2 {
-      width: 48%; } }
-
-@media (min-width: 767px) {
-  .col-1 {
-    margin-right: 4%; } }
-
-.bold {
-  font-weight: 500; }
+    .go-resources .columns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  .go-resources .col, .go-resources .col-1, .go-resources .col-2 {
+    width: 100%;
+    display: block;
+    float: left;
+    vertical-align: middle; }
+    @media (min-width: 767px) {
+      .go-resources .col, .go-resources .col-1, .go-resources .col-2 {
+        width: 48%; } }
+  @media (min-width: 767px) {
+    .go-resources .col-1 {
+      margin-right: 4%; } }
+  .go-resources .bold {
+    font-weight: 500; }
+  .go-resources p {
+    margin-bottom: 1em !important; }
+  .go-resources img {
+    max-width: 100%; }
+  .go-resources h2 {
+    margin-bottom: 1em; }
 
 .material-icons, img {
   vertical-align: middle; }
@@ -1398,7 +1466,7 @@ textarea.form-control {
 .btn-xs {
   padding: 1px 5px; }
 
-.btn-block, .input-group.col, .input-group.col-1, .input-group.col-2 {
+.btn-block, .input-group.col, .go-resources .input-group.col-1, .go-resources .input-group.col-2 {
   padding-left: 0;
   padding-right: 0; }
 
@@ -2071,7 +2139,7 @@ textarea.form-control {
   display: table;
   border-collapse: separate; }
 
-.input-group.col, .input-group.col-1, .input-group.col-2 {
+.input-group.col, .go-resources .input-group.col-1, .go-resources .input-group.col-2 {
   float: none; }
 
 .input-group .form-control {

@@ -1,0 +1,133 @@
+.go-resources { //Begin page wrapper
+
+/*************************************************
+GO RESOURCES HEADER
+*************************************************/
+
+#go-resources-hero {
+
+	background: url(img/faqs-hero.jpg);
+	padding: 4em 0;
+
+	h1 {
+		color: #fff;
+		font-size: 3em;
+	}
+}
+
+/*************************************************
+GO RESOURCES MENU
+*************************************************/
+
+#go-resources-menu {
+
+	background: #eaedee;
+
+	menu {
+		padding: 2em 0 2em 0;
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0 2em 0 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 2em 0 0;
+		margin: 0;
+	}
+}
+
+/*************************************************
+Questions Section
+*************************************************/
+
+#questions {
+	padding: 6em 0em;
+	background: #eaedee;
+
+	h2 {
+		margin-bottom: .33em;
+	}
+
+	p span {
+		margin-right: 1em;
+	}
+
+	p span:last-child {
+		margin-right: 0;
+	}
+
+	i {
+		color: #1e78d7;
+	}
+
+	@media (min-width: 767px) {
+		h2 {
+			font-size: 3em;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+	}
+
+}
+
+/*************************************************
+GO RESOURCES BASIC LAYOUT
+*************************************************/
+
+section {
+	border-bottom: 1px solid #ccc;
+}
+
+.columns {
+	@media (min-width: 767px) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.col {
+	width: 100%;
+	display: block;
+	float: left;
+	vertical-align: middle;
+	@media (min-width: 767px) {
+		width: 48%;
+	}
+}
+
+.col-1 {
+	@extend .col;
+	@media (min-width: 767px) {
+		margin-right: 4%;
+	}
+}
+
+.col-2 {
+	@extend .col;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+p {
+	margin-bottom: 1em !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+} //end page wrapper
