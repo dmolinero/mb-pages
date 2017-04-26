@@ -1,8 +1,8 @@
 ### Marketing Pages
 
-This is a boilerplate for static html pages.
+These are a prebuild of static html pages for the marketing site.
 
-The environment is set up to compile scss and es2015 with gulp.
+See the gulp file for a few basic tasks.
 
 
 ## Contact
