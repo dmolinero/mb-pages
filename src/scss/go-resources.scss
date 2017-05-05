@@ -1,0 +1,248 @@
+// Bootstrap Break Point Variables
+
+$xs: 576px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+// Colors 
+$blue: #1e78d7;
+
+.go-resources { //Begin page wrapper
+
+/*************************************************
+UTILITY CLASSES
+*************************************************/
+
+// Vertically center children (flexbox, degrades gracefully)
+
+.v-center-children {
+	display: flex;
+	align-items: center;
+}
+
+
+// Hide on Mobile
+
+.mobile-hide {
+	display: none;
+
+	@media (min-width: $md) {
+		display: block;
+	}
+}
+
+
+// Widths
+
+.w-50 { width: 50%; margin: 0 auto; }
+.w-60 { width: 60%; margin: 0 auto; }
+.w-70 { width: 70%; margin: 0 auto; }
+.w-80 { width: 80%; margin: 0 auto; }
+
+
+// Margins
+
+.no-margin { margin: 0 !important; }
+.m-bot-1 { margin-bottom: 1em; }
+.m-bot-2 { margin-bottom: 2em; }
+.m-bot-3 { margin-bottom: 3em; }
+.m-top-3 { margin-top: 1em; }
+.m-top-3 { margin-top: 2em; }
+.m-top-3 { margin-top: 3em; }
+
+
+// Padding
+
+.no-padding { padding: 0 !important; }
+.pad-1 { padding: 1em; }
+
+
+// Border
+
+.border { border: 1px solid #ccc; }
+
+
+// Background Color
+
+.grey-bg { background: #eaedee; }
+
+
+// Make Bold
+
+.bold { font-weight: 500; }
+
+// Opacity on Hover
+
+.hover-opacity {
+	&:hover {
+		opacity: .87;
+	}
+}
+
+// Sample Text
+
+.sample-text {
+	background: #eaedee;
+	padding: 1em 1.5em;
+	border: 1px solid #ccc;
+
+	p {
+			font-size: 1em;
+			line-height: 1.6em;
+			color: #777;
+			font-weight: 300;
+		}
+
+	@media (min-width: $md) {
+
+		p {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.preview-img {
+	max-height: 300px;
+}
+
+.preview-img-sm {
+	height: 180px;
+}
+
+/*************************************************
+GO RESOURCES BASIC ELEMENT STYLES
+*************************************************/
+
+section {
+	border-bottom: 1px solid #ccc;
+	padding: 6em 0 3em 0;
+}
+
+.no-rows {
+	padding: 6em 0 6em 0;
+}
+
+.row > div {
+		margin-bottom: 3em;
+	}
+
+p {
+	margin-bottom: 1em;
+}
+
+a {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: .5em;
+}
+
+h2 {
+	margin-bottom: 2em;
+}
+
+h3 {
+	margin-bottom: .5em;
+}
+
+h4 {
+	margin-bottom: 1em;
+	color: $blue;
+}
+
+xmp {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+/*************************************************
+GO RESOURCES HEADERS
+*************************************************/
+
+#go-resources-hero {
+
+	background: url(img/faqs-hero.jpg);
+	padding: 4em 0;
+
+	h1 {
+		color: #fff;
+		font-size: 3em;
+		margin-bottom: 0;
+	}
+}
+
+.header-text {
+	
+	@media (min-width: $md) {
+		font-size: 1.5em;
+		font-weight: 300;
+		margin-top: .5em;
+	}
+}
+
+/*************************************************
+GO RESOURCES MENU
+*************************************************/
+
+#go-resources-menu {
+
+	padding: 2em 0;
+
+	ul {
+		list-style: none;
+		padding: 0 2em 0 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 2em 0 0;
+		margin: 0;
+	}
+}
+
+/*************************************************
+Questions Section
+*************************************************/
+
+#questions {
+	padding: 6em 0em;
+	background: #eaedee;
+
+	h2 {
+		margin-bottom: .33em;
+	}
+
+	p span {
+		margin-right: 1em;
+	}
+
+	p span:last-child {
+		margin-right: 0;
+	}
+
+	@media (min-width: 767px) {
+		h2 {
+			font-size: 3em;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+	}
+
+}
+
+
+} //end page wrapper
