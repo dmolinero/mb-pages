@@ -24,17 +24,6 @@ UTILITY CLASSES
 }
 
 
-// Hide on Mobile
-
-.mobile-hide {
-	display: none;
-
-	@media (min-width: $md) {
-		display: block;
-	}
-}
-
-
 // Widths
 
 .w-50 { width: 50%; margin: 0 auto; }
@@ -49,8 +38,8 @@ UTILITY CLASSES
 .m-bot-1 { margin-bottom: 1em; }
 .m-bot-2 { margin-bottom: 2em; }
 .m-bot-3 { margin-bottom: 3em; }
-.m-top-3 { margin-top: 1em; }
-.m-top-3 { margin-top: 2em; }
+.m-top-1 { margin-top: 1em; }
+.m-top-2 { margin-top: 2em; }
 .m-top-3 { margin-top: 3em; }
 
 
@@ -104,6 +93,42 @@ UTILITY CLASSES
 	}
 }
 
+.lg-text {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+.md-text {
+	font-size: 1.15em;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+.white {
+	color: #fff;
+}
+
+.expanding-text {
+	font-size: 2em;
+
+	@media (min-width: $md) {
+		font-size: 3em;
+	}
+
+	@media (min-width: $lg) {
+		font-size: 4em;
+	}
+}
+
+.shrink-text {
+	@media (max-width: $xs) {
+		font-size: 1em;
+	}
+}
+
+// Image styles
+
 .preview-img {
 	max-height: 300px;
 }
@@ -111,6 +136,8 @@ UTILITY CLASSES
 .preview-img-sm {
 	height: 180px;
 }
+
+
 
 /*************************************************
 GO RESOURCES BASIC ELEMENT STYLES
@@ -131,6 +158,10 @@ section {
 
 p {
 	margin-bottom: 1em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 a {
