@@ -121,6 +121,19 @@ UTILITY CLASSES
 	}
 }
 
+.hg-text {
+
+	font-size: 2em;
+
+	@media (min-width: $md) {
+		font-size: 3em;
+	}
+
+	@media (min-width: $lg) {
+		font-size: 6em;
+	}
+}
+
 .shrink-text {
 	@media (max-width: $xs) {
 		font-size: 1em;

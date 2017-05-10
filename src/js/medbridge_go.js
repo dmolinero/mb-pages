@@ -1,15 +1,20 @@
 
+jQuery(document).ready(function($) {
 
-/**
- * Selects specified text to clipboard
- * @param {string} dom element to copy
- * @export
- */
+// Set up the controller that we'll use for all of our ScrollMagic animation
+var controller = new ScrollMagic.Controller({container: "#iScroll-wrapper"});
 
-function copyToClipboard(element) {
-  var temp = document.getElementById("select-text-button");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
+	/**
+	* Header Animation
+	*/
+
+    var titleFade = new ScrollMagic.Scene ({
+		triggerElement: '#go-icons',
+		triggerHook: .6,
+		duration: '20%'
+	})
+	.setTween(TweenMax.from( '.go-icon', 1, {css: {'opacity' : '0'}, ease:Linear.easeNone}))
+	.addTo(controller);
+
+
+}); // End Ready

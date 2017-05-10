@@ -89,6 +89,14 @@ Questions Section
     @media (min-width: 992px) {
       .go-resources .expanding-text {
         font-size: 4em; } }
+  .go-resources .hg-text {
+    font-size: 2em; }
+    @media (min-width: 768px) {
+      .go-resources .hg-text {
+        font-size: 3em; } }
+    @media (min-width: 992px) {
+      .go-resources .hg-text {
+        font-size: 6em; } }
   @media (max-width: 576px) {
     .go-resources .shrink-text {
       font-size: 1em; } }
