@@ -1,292 +1,386 @@
 // Bootstrap Break Point Variables
 
-$xs: 576px;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
+// $xs: 576px;
+// $sm: 576px;
+// $md: 768px;
+// $lg: 992px;
+// $xl: 1200px;
 
 
-// Colors 
-$blue: #1e78d7;
+// // Colors 
+// $blue: #1e78d7;
 
-.go-resources { //Begin page wrapper
+// .go-resources { //Begin page wrapper
 
-/*************************************************
-UTILITY CLASSES
-*************************************************/
+// /*************************************************
+// UTILITY CLASSES
+// *************************************************/
 
-// Vertically center children (flexbox, degrades gracefully)
+// // Vertically center children (flexbox, degrades gracefully)
 
-.v-center-children {
-	display: flex;
-	align-items: center;
-}
+// .v-center-children {
+// 	display: flex;
+// 	align-items: center;
+// }
 
 
-// Widths
+// // Widths
 
-.w-50 { width: 50%; margin: 0 auto; }
-.w-60 { width: 60%; margin: 0 auto; }
-.w-70 { width: 70%; margin: 0 auto; }
-.w-80 { width: 80%; margin: 0 auto; }
+// .w-50 { width: 50%; margin: 0 auto; }
+// .w-60 { width: 60%; margin: 0 auto; }
+// .w-70 { width: 70%; margin: 0 auto; }
+// .w-80 { width: 80%; margin: 0 auto; }
 
 
-// Margins
+// // Margins
 
-.no-margin { margin: 0 !important; }
-.m-bot-1 { margin-bottom: 1em; }
-.m-bot-2 { margin-bottom: 2em; }
-.m-bot-3 { margin-bottom: 3em; }
-.m-top-1 { margin-top: 1em; }
-.m-top-2 { margin-top: 2em; }
-.m-top-3 { margin-top: 3em; }
+// .no-margin { margin: 0 !important; }
+// .m-bot-1 { margin-bottom: 1em; }
+// .m-bot-2 { margin-bottom: 2em; }
+// .m-bot-3 { margin-bottom: 3em; }
+// .m-top-1 { margin-top: 1em; }
+// .m-top-2 { margin-top: 2em; }
+// .m-top-3 { margin-top: 3em; }
 
 
-// Padding
+// // Padding
 
-.no-padding { padding: 0 !important; }
-.pad-1 { padding: 1em; }
+// .no-padding { padding: 0 !important; }
+// .pad-1 { padding: 1em; }
 
 
-// Border
+// // Border
 
-.border { border: 1px solid #ccc; }
+// .border { border: 1px solid #ccc; }
 
 
-// Background Color
+// // Background Color
 
-.grey-bg { background: #eaedee; }
+// .grey-bg { background: #eaedee; }
 
 
-// Make Bold
+// // Make Bold
 
-.bold { font-weight: 500; }
+// .bold { font-weight: 500; }
 
-// Opacity on Hover
+// // Opacity on Hover
 
-.hover-opacity {
-	&:hover {
-		opacity: .87;
-	}
-}
+// .hover-opacity {
+// 	&:hover {
+// 		opacity: .87;
+// 	}
+// }
 
-// Sample Text
+// // Sample Text
 
-.sample-text {
-	background: #eaedee;
-	padding: 1em 1.5em;
-	border: 1px solid #ccc;
+// .sample-text {
+// 	background: #eaedee;
+// 	padding: 1em 1.5em;
+// 	border: 1px solid #ccc;
 
-	p {
-			font-size: 1em;
-			line-height: 1.6em;
-			color: #777;
-			font-weight: 300;
-		}
+// 	p {
+// 			font-size: 1em;
+// 			line-height: 1.6em;
+// 			color: #777;
+// 			font-weight: 300;
+// 		}
 
-	@media (min-width: $md) {
+// 	@media (min-width: $md) {
 
-		p {
-			font-size: 1.5em;
-		}
-	}
-}
+// 		p {
+// 			font-size: 1.5em;
+// 		}
+// 	}
+// }
 
-.lg-text {
-	font-size: 1.25em;
-	line-height: 1.5em;
-	font-weight: 300;
-}
+// .lg-text {
+// 	font-size: 1.25em;
+// 	line-height: 1.5em;
+// 	font-weight: 300;
+// }
 
-.md-text {
-	font-size: 1.15em;
-	line-height: 1.5em;
-	font-weight: 300;
-}
+// .md-text {
+// 	font-size: 1.15em;
+// 	line-height: 1.5em;
+// 	font-weight: 300;
+// }
 
-.white {
-	color: #fff;
-}
+// .white {
+// 	color: #fff;
+// }
 
-.expanding-text {
-	font-size: 2em;
+// .expanding-text {
+// 	font-size: 2em;
 
-	@media (min-width: $md) {
-		font-size: 3em;
-	}
+// 	@media (min-width: $md) {
+// 		font-size: 3em;
+// 	}
 
-	@media (min-width: $lg) {
-		font-size: 3.5em;
-	}
-}
+// 	@media (min-width: $lg) {
+// 		font-size: 3.5em;
+// 	}
+// }
 
-.hg-text {
+// .hg-text {
 
-	font-size: 2em;
+// 	font-size: 2em;
 
-	@media (min-width: $md) {
-		font-size: 3em;
-	}
+// 	@media (min-width: $md) {
+// 		font-size: 3em;
+// 	}
 
-	@media (min-width: $lg) {
-		font-size: 6em;
-	}
-}
+// 	@media (min-width: $lg) {
+// 		font-size: 6em;
+// 	}
+// }
 
-.shrink-text {
-	@media (max-width: $xs) {
-		font-size: 1em;
-	}
-}
+// .shrink-text {
+// 	@media (max-width: $xs) {
+// 		font-size: 1em;
+// 	}
+// }
 
-// Image styles
+// // Image styles
 
-.preview-img {
-	max-height: 300px;
-}
+// .preview-img {
+// 	max-height: 300px;
+// }
 
-.preview-img-sm {
-	height: 180px;
-}
+// .preview-img-sm {
+// 	height: 180px;
+// }
 
 
 
-/*************************************************
-GO RESOURCES BASIC ELEMENT STYLES
-*************************************************/
+// /*************************************************
+// GO RESOURCES BASIC ELEMENT STYLES
+// *************************************************/
 
-section {
-	border-bottom: 1px solid #ccc;
-	padding: 6em 0 3em 0;
-}
+// .section {
+// 	border-bottom: 1px solid #ccc;
+// 	padding: 6em 0 3em 0;
+// }
 
-.no-rows {
-	padding: 6em 0 6em 0;
-}
+// .no-rows {
+// 	padding: 6em 0 6em 0;
+// }
 
-.row > div {
-		margin-bottom: 3em;
-	}
+// .row > div {
+// 		margin-bottom: 3em;
+// 	}
 
-p {
-	margin-bottom: 1em;
+// p {
+// 	margin-bottom: 1em;
 
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
+// 	&:last-child {
+// 		margin-bottom: 0;
+// 	}
+// }
 
-a {
-	cursor: pointer;
-}
+// a {
+// 	cursor: pointer;
+// }
 
-img {
-	max-width: 100%;
-}
+// img {
+// 	max-width: 100%;
+// }
 
-h1 {
-	font-size: 3em;
-	margin-bottom: .5em;
-}
+// h1 {
+// 	font-size: 3em;
+// 	margin-bottom: .5em;
+// }
 
-h2 {
-	margin-bottom: 2em;
-}
+// h2 {
+// 	margin-bottom: 2em;
+// }
 
-h3 {
-	margin-bottom: .5em;
-}
+// h3 {
+// 	margin-bottom: .5em;
+// }
 
-h4 {
-	margin-bottom: 1em;
-	color: $blue;
-}
+// h4 {
+// 	margin-bottom: 1em;
+// 	color: $blue;
+// }
 
-xmp {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
+// xmp {
+//     white-space: pre-wrap;
+//     word-wrap: break-word;
+// }
 
 
-/*************************************************
-GO RESOURCES HEADERS
-*************************************************/
+// /*************************************************
+// GO RESOURCES HEADERS
+// *************************************************/
 
-#go-resources-hero {
+// #go-resources-hero {
 
-	background: url(img/faqs-hero.jpg);
-	padding: 4em 0;
+// 	background: url(img/faqs-hero.jpg);
+// 	padding: 4em 0;
 
-	h1 {
-		color: #fff;
-		font-size: 3em;
-		margin-bottom: 0;
-	}
-}
+// 	h1 {
+// 		color: #fff;
+// 		font-size: 3em;
+// 		margin-bottom: 0;
+// 	}
+// }
 
-.header-text {
+// .header-text {
 	
-	@media (min-width: $md) {
-		font-size: 1.5em;
-		font-weight: 300;
-		margin-top: .5em;
-	}
-}
+// 	@media (min-width: $md) {
+// 		font-size: 1.5em;
+// 		font-weight: 300;
+// 		margin-top: .5em;
+// 	}
+// }
 
-/*************************************************
-GO RESOURCES MENU
-*************************************************/
+// /*************************************************
+// GO RESOURCES MENU
+// *************************************************/
 
-#go-resources-menu {
+// #go-resources-menu {
 
-	padding: 2em 0;
+// 	padding: 2em 0;
 
-	ul {
-		list-style: none;
-		padding: 0 2em 0 0;
-		margin: 0;
-	}
+// 	ul {
+// 		list-style: none;
+// 		padding: 0 2em 0 0;
+// 		margin: 0;
+// 	}
 
-	li {
-		list-style: none;
-		display: inline-block;
-		padding: 0 2em 0 0;
-		margin: 0;
-	}
-}
+// 	li {
+// 		list-style: none;
+// 		display: inline-block;
+// 		padding: 0 2em 0 0;
+// 		margin: 0;
+// 	}
+// }
 
-/*************************************************
-Questions Section
-*************************************************/
+// /*************************************************
+// Questions Section
+// *************************************************/
 
-#questions {
-	padding: 6em 0em;
-	background: #eaedee;
+// #questions {
+// 	padding: 6em 0em;
+// 	background: #eaedee;
 
-	h2 {
-		margin-bottom: .33em;
-	}
+// 	h2 {
+// 		margin-bottom: .33em;
+// 	}
 
-	p span {
-		margin-right: 1em;
-	}
+// 	p span {
+// 		margin-right: 1em;
+// 	}
 
-	p span:last-child {
-		margin-right: 0;
-	}
+// 	p span:last-child {
+// 		margin-right: 0;
+// 	}
 
-	@media (min-width: 767px) {
-		h2 {
-			font-size: 3em;
-		}
+// 	@media (min-width: 767px) {
+// 		h2 {
+// 			font-size: 3em;
+// 		}
 
-		p {
-			font-size: 1.5em;
-		}
-	}
+// 		p {
+// 			font-size: 1.5em;
+// 		}
+// 	}
 
-}
+// }
 
 
-} //end page wrapper
+//} //end page wrapper
+//
+//
+// /*Helper Classes*/
+
+//         /* Verticlaly center child elements with flexbox, degrades gracefully */
+        
+//         .v-center-children { display: block; }
+
+//         @media (min-width: 768px) { 
+//             .v-center-children {
+//                 display: -webkit-flex;
+//                 display: -ms-flexbox;
+//                 display: flex;
+//                 -webkit-align-items: center;
+//                 -ms-flex-align: center;
+//                 align-items: center;
+//             }
+//         }
+          
+//         .w-50 {
+//             width: 50%;
+//             margin: 0 auto;
+//         }
+
+//         .w-70 {
+//             width: 70%;
+//             margin: 0 auto;
+//         }
+
+//         .m-b-1h { margin-bottom: .5em; }
+//         .m-b-1 { margin-bottom: 1em; }
+//         .m-b-2 { margin-bottom: 2em; }
+//         .m-b-3 { margin-bottom: 3em; }
+//         .m-b-4 { margin-bottom: 4em; }
+//         .m-t-2 { margin-top: 2em; }
+//         .m-r-2 { margin-right: 2em; }
+
+//         .p-1 { padding: 1em; }
+//         .p-2 { padding: 2em; }
+//         .p-t-6 { padding-top: 6em; }
+//         .p-t-8 { padding-top: 8em; }
+//         .p-b-2 { padding-bottom: 2em; }
+//         .p-b-6 { padding-bottom: 6em; }
+//         .p-b-8 { padding-bottom: 8em; }
+
+//         .border { border: 1px solid #ccc; }
+
+//         .border-b { border-bottom: 1px solid #ccc; }
+          
+//         .grey { background: #eaedee; }
+      
+//         .bold { font-weight: 500; }
+
+//         .blue { background: #1e78d7; }
+
+//         .white-text { color: #fff; }
+
+//         .lg-text {
+//             font-size: 1.25em;
+//             line-height: 1.5em;
+//             font-weight: 300;
+//         }
+
+//         .expanding-text {
+//             font-size: 2em;
+//             line-height: 1;
+//         }
+            
+//         @media (min-width: 768px) {
+//             .expanding-text { font-size: 3em; }
+//         }
+    
+//         @media (min-width: 992px) {
+//             .expanding-text { font-size: 3.5em; }
+//         }
+
+//         .xl-text {
+//             font-size: 2em;
+//             line-height: 1.15;
+//         }
+        
+//         @media (min-width: 768px) {
+//             .xl-text { font-size: 3em; }
+//         }
+
+//         @media (min-width: 992px) {
+//             .xl-text { font-size: 6em; }
+//         }
+        
+//         /*Element Styles*/
+
+//         a { cursor: pointer; }
+  
+//         img { max-width: 100%; }
