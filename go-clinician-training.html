@@ -9,139 +9,231 @@
       rel="stylesheet">
 </head>
 
-<body class="go-clinician-training go-resources" id="go-clinician-training">
+<style>
+  
+		/*Helper Classes*/
 
-	<section id="go-resources-hero">
+		/* Verticlaly center child elements with flexbox, degrades gracefully */
+        .v-center-children { display: block; }
+
+        @media (min-width: 768px) { 
+            .v-center-children {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+        }
+		  
+		.w-50 {
+		    width: 50%;
+		    margin: 0 auto;
+		}
+
+		.w-70 {
+		    width: 70%;
+		    margin: 0 auto;
+		}
+		 
+		.m-b-0 { margin-bottom: 0; }
+		.m-b-1 { margin-bottom: 1em; }
+		.m-b-2 { margin-bottom: 2em; }
+		.m-b-3 { margin-bottom: 3em; }
+		.m-b-4 { margin-bottom: 4em; }
+		.m-t-2 { margin-top: 2em; }
+		.m-r-2 { margin-right: 2em; }
+
+		.p-1 { padding: 1em; }
+		.p-2 { padding: 2em; }
+		.p-t-6 { padding-top: 6em; }
+		.p-b-2 { padding-bottom: 2em; }
+		.p-b-6 { padding-bottom: 6em; }
+
+		.border { border: 1px solid #ccc; }
+
+		.border-b { border-bottom: 1px solid #ccc; }
+		  
+		.grey { background: #eaedee; }
+	  
+	  	.bold { font-weight: 500; }
+
+	  	.blue-text { color: #1e78d7; }
+
+  		.lg-text {
+    		font-size: 1.25em;
+    		line-height: 1.5em;
+    		font-weight: 300;
+    	}
+  
+  		
+  		/*Element Styles*/
+
+		a { cursor: pointer; }
+  
+		img { max-width: 100%; }
+  
+
+    	/*Resources Header*/
+  
+  		#go-resources-hero {
+    		background: url(dist/img/faqs-hero.jpg);
+    		padding: 4em 0;
+    		color: #fff;
+    	}
+    	
+  		#go-resources-menu {
+    		padding: 2em 0;
+    	}
+ 	
+ 		#go-resources-menu ul {
+      		list-style: none;
+      		padding: 0 2em 0 0;
+      		margin: 0;
+      	}
+
+    	#go-resources-menu li {
+      		list-style: none;
+      		display: inline-block;
+      		padding: 0 2em 0 0;
+      		margin: 0;
+      	}
+
+	</style>
+
+<body class="go-resources" id="go-clinician-training">
+
+	<div id="go-resources-hero" class="p-t-6 p-b-2">
 	  	<div class="container">
 	  		<h1 class="center">MedBridge GO Resources</h1>
 	  	</div>
-  	</section>
+  	</div>
   
-	<section id="go-resources-menu">
+	<div id="go-resources-menu" class="grey border-b">
 	  	<div class="container">
 	  			<ul>
-	  				<li><a href="assets" alt="Marketing Assets">Marketing Assets</a></li>
-	  				<li><a href="assets" alt="Clinical Training">Clinical Training</a></li>
-	  				<li>FAQ</li>
+	  				<li><a href="go-assets.html" alt="Marketing Assets">Marketing Assets</a></li>
+  					<li>Clinical Training</li>
+  					<li><a href="go-faqs.html" alt="Clinical Training">FAQs</a></li>
 	  			</ul>
 	  	</div>
-	</section>
+	</div>
 
-  	<section id="clinical-training-header">
+  	<div id="clinical-training-header" class="p-t-6 p-b-2 border-b">
 	  	<div class="container">
 	  		<div class="row v-center-children">
 
-			  	<div class="col-xs-12 col-sm-6">
-			  		<h1>Clinician Training</h1>
-			  		<p class="header-text">MedBridge GO is the ultimate solution for keeping your patients motivated and engaged with their care between clinical visits. By automatically converting your prescribed HEP into achievable daily doses, the mobile app saves you valuable time while drastically improving the home exercise experience.</p>
-			  		<p class="header-text">Activation is quick and easy—patients simply download the app, enter the access code you assign, and get moving!</p>
+			  	<div class="col-xs-12 col-sm-6 m-b-4">
+			  		<h1 class="m-b-1">Clinician Training</h1>
+			  		<p class="lg-text m-b-1">MedBridge GO is the ultimate solution for keeping your patients motivated and engaged with their care between clinical visits. By automatically converting your prescribed HEP into achievable daily doses, the mobile app saves you valuable time while drastically improving the home exercise experience.</p>
+			  		<p class="lg-text">Activation is quick and easy-patients simply download the app, enter the access code you assign, and get moving!</p>
 			  	</div>
 
-			  	<div class="col-xs-12 col col-sm-6 mobile-hide center">
+			  	<div class="col-xs-12 col col-sm-6 hidden-sm hidden-xs center m-b-4">
 			  		<img src="dist/img/go-home-tablet-sm.gif" class="w-60">
 			  	</div>
 
 			</div>
 	  	</div>
-  	</section>
+  	</div>
 
-  	<section id="how-it-works-1" class="grey-bg">
+  	<div id="how-it-works-1" class="grey p-t-6 p-b-2 border-b">
   		<div class="container">
-  			<h2>How it Works</h2>
+  			<h2 class="m-b-2">How it Works</h2>
   			<div class="row">
 
-			  	<div class="col-sm-12 col-md-6">
-			  		<h4>1. Clinician builds patient HEP</h2>
-			  		<p class="m-bot-2">Create your patient's home exercise program in the MedBridge HEP builder and assign the proper parameters (sets, reps, hold, weekly/daily count, etc).</p>
+			  	<div class="col-sm-12 col-md-6 m-b-4">
+			  		<h4 class="m-b-1 blue-text">1. Clinician builds patient HEP</h2>
+			  		<p class="m-b-1 lg-text">Create your patient's home exercise program in the MedBridge HEP builder and assign the proper parameters (sets, reps, hold, weekly/daily count, etc).</p>
 			  		<div class="center">
-			  			<img src="dist/img/hep-builder.png" alt="hep builder" class="w-60">
+			  			<img src="dist/img/hep-builder.png" alt="hep builder" class="w-70">
 			  		</div>
 			  	</div>
 
-			  	<div class="col-sm-12 col-md-6">
-			  		<h4>2. Reps convert to daily dosage</h2>
-			  		<p class="m-bot-2">MedBridge GO converts your assigned exercises and selected parameters and will calculate the appropriate dosage into a daily program for easier adherence.</p>
-			  		*Pro Tip: Clinicians that create programs with duration of 8 minutes or less have higher activation and engagement rates!
+			  	<div class="col-sm-12 col-md-6 m-b-4">
+			  		<h4 class="m-b-1 blue-text">2. Reps convert to daily dosage</h2>
+			  		<p class="m-b-1 lg-text">MedBridge GO converts your assigned exercises and selected parameters and will calculate the appropriate dosage into a daily program for easier adherence.</p>
+			  		<p class="m-b-1">*Pro Tip: Clinicians that create programs with duration of 8 minutes or less have higher activation and engagement rates!<p>
 			  		<div class="center">
-			  			<img src="dist/img/8-minute-session.png" alt="8 minute session" class="w-60">
+			  			<img src="dist/img/8-minute-session.png" alt="8 minute session" class="w-70">
 			  		</div>
 		  		</div>
 
 			</div>
   		</div>
-  	</section>
+  	</div>
 
-  	<section id="how-it-works-2" class="grey-bg">
+  	<div id="how-it-works-2" class="grey  p-t-6 p-b-2 border-b">
   		<div class="container">
   			<div class="row">
 
-  				<div class="col-sm-12 col-md-6">
-			  		<h4>3. Clinician shares HEP with patient</h2>
-			  		<p class="m-bot-2">Share the HEP you've created with your patient via text, email, or print out.</p>
+  				<div class="col-sm-12 col-md-6 m-b-4">
+			  		<h4 class="m-b-1 blue-text">3. Clinician shares HEP with patient</h2>
+			  		<p class="m-b-1 lg-text">Share the HEP you've created with your patient via text, email, or print.</p>
 			  		<div class="center">
-			  			<img src="dist/img/hep-builder-zoom.png" alt="hep builder zoom" class="w-60">
+			  			<img src="dist/img/hep-builder-zoom.png" alt="hep builder zoom" class="w-70">
 			  		</div>
 			  	</div>
 
-			  	<div class="col-sm-12 col-md-6">
-			  		<h4>4. Patient activates and begins</h2>
-			  		<p class="m-bot-2">Your patient will be prompted to download the app and will see the following messaging about exercise duration.</p>
+			  	<div class="col-sm-12 col-md-6 m-b-4">
+			  		<h4 class="m-b-1 blue-text">4. Patient activates and begins</h2>
+			  		<p class="m-b-1 lg-text">Your patient will be prompted to download the app and will see the following messaging about exercise duration.</p>
 			  		<div class="center">
-			  			<img src="dist/img/download-prompt.png" alt="download image" class="w-60">
+			  			<img src="dist/img/download-prompt.png" alt="download image" class="w-50">
 			  		</div>
 			  	</div>
 
 			</div>
   		</div>
-  	</section>
+  	</div>
 
-  	<section id="patient-experience">
+  	<div id="patient-experience" class="p-t-6 p-b-2 border-b">
   		<div class="container">
 
-  			<h2 class="m-bot-1">The Patient Expereince</h2>
+  			<h2 class="m-b-1">The Patient Expereince</h2>
 
-			<div class="m-bot-3">
+			<div class="m-b-3">
 				<a href="go-faqs.html" class="button">View Patient FAQ</a>
 			</div>
 
-			<div class="col-xs-6 col-md-3 center">
-				<img src="dist/img/go-exercise-straight-sm.png" alt="exercise screen" class="preview-img m-bot-2">
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="dist/img/go-exercise-straight-sm.png" alt="exercise screen" class="preview-img m-b-2 w-70">
 				<h4>Exercises</h4>
-				<p>Patients can watch interactive HD videos with easy-to-follow instructions.</p>
+				<p class="lg-text">Patients can watch interactive HD videos with easy-to-follow instructions.</p>
 			</div>
 
-			<div class="col-xs-6 col-md-3 center">
-				<img src="dist/img/go-condition-straight-sm.png" alt="resources screen" class="preview-img m-bot-2">
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="dist/img/go-condition-straight-sm.png" alt="resources screen" class="preview-img m-b-2 w-70">
 				<h4>Resources</h4>
-				<p>Patients can gain a deeper understanding of their condition with patient education.</p>
+				<p class="lg-text">Patients can gain a deeper understanding of their condition with patient education.</p>
 			</div>
 
-			<div class="col-xs-6 col-md-3 center">
-				<img src="dist/img/go-rewards-straight-sm.png" alt="activity screen" class="preview-img m-bot-2">
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="dist/img/go-rewards-straight-sm.png" alt="activity screen" class="preview-img m-b-2 w-70">
 				<h4>My Activity</h4>
-				<p>Patients can track activity and progress throughout treatment and post care.</p>
+				<p class="lg-text">Patients can track activity and progress throughout treatment and post care.</p>
 			</div>
 
-			<div class="col-xs-6 col-md-3 center">
-				<img src="dist/img/go-reminders-straight-sm.png" alt="reminder screen" class="preview-img m-bot-2">
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="dist/img/go-reminders-straight-sm.png" alt="reminder screen" class="preview-img m-b-2 w-70">
 				<h4>Reminders</h4>
-				<p>Patients can set reminders to keep on track with their goals for recovery.</p>
+				<p class="lg-text">Patients can set reminders to keep on track with their goals for recovery.</p>
 			</div>
 
   		</div>
-  	</section>
+  	</div>
 
-  	<section id="questions">
+  	<div class="p-t-6 p-b-6 border-b grey" id="questions">
 	  	<div class="container center">
-		  	<h2><span class="bold">Questions?</span> We can help.</h2>
-		  	<p class="questions-line">
-
-		  		<i class="material-icons">phone</i>
-		  		<span>206.216.5003</span>
+		  	<h2 class="m-b-1 xl-text"><span class="bold">Questions?</span> We can help.</h2>
+		  	<p>
+				<i class="material-icons">phone</i>
+		  		<span class="m-r-2">206.216.5003</span>
 		  		<i class="material-icons">language</i>
 		  		<span>support@medbridgeed.com</span>
 		  	</p>
 		</div>
-  	</section>
+  	</div>
 
 </body>

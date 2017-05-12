@@ -12,14 +12,18 @@
 		/*Helper Classes*/
 
   		/* Verticlaly center child elements with flexbox, degrades gracefully */
-		.v-center-children {
-		    display: -webkit-flex;
-		    display: -ms-flexbox;
-		    display: flex;
-		    -webkit-align-items: center;
-		    -ms-flex-align: center;
-		    align-items: center;
-		}
+        .v-center-children { display: block; }
+
+        @media (min-width: 768px) { 
+            .v-center-children {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+        }
 		  
 		.w-50 {
 		    width: 50%;
@@ -135,12 +139,12 @@
 	  	</div>
   	</div>
   
-	<div id="go-resources-menu" class="grey">
+	<div id="go-resources-menu" class="grey border-b">
 	  	<div class="container">
   			<ul>
   				<li>Marketing Assets</li>
-  				<li><a href="assets" alt="Clinical Training">Clinical Training</a></li>
-  				<li><a href="assets" alt="Clinical Training">FAQs</a></li>
+  				<li><a href="go-clinician-training.html" alt="Clinical Training">Clinical Training</a></li>
+  				<li><a href="go-faqs.html" alt="Clinical Training">FAQs</a></li>
   			</ul>
 	  	</div>
 	</div>
@@ -150,7 +154,7 @@
 	  		<div class="row v-center-children">
 
 			  	<div class="col-md-6 col-xs-12">
-			  		<h1 class="m-b-1 xl-text">Marketing Assets</h1>
+			  		<h1 class="m-b-1">Marketing Assets</h1>
 			  		<p class="lg-text m-b-1">We love building the tools to help you improve the lives of your patients. We also understand that engaging your patients as active participants in their recovery plan is a challenge that requires effective communication.</p>
 			  		<p class="lg-text m-b-1">We've got you covered.</p>
 			  		<p class="lg-text">Below are all the assets you'll need to get your patients activated and using the MedBridge GO app, including: flyers, posters, videos, and other shareable content for your website, emails, and social media.</p>
@@ -189,9 +193,9 @@
 	  			</div>
 
 	  			<div class="col-sm-4 center m-b-4">
-	  				<img src="dist/img/go-sales-handout.png" class="m-b-1 border w-50">
+	  				<img src="dist/img/go-sales-flyer.png" class="m-b-1 border w-50">
 	  				<p class="no-margin class">Hi-Res Flyer</p>
-	  				<a href="dist/download/go-sales-handout.pdf" download>Download</a>
+	  				<a href="dist/download/go-sales-flyer.pdf" download>Download</a>
 	  			</div>
 	  			
 	  		</div>
@@ -348,16 +352,22 @@
 
 		  	<div class="row center v-center-children">
 
-		  		<div class="col-xs-12 col-sm-6 m-b-4">
+		  		<div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 m-b-4">
 		  			<img src="dist/img/go-logo.png" class="m-b-1 w-50">
 		  			<p class="no-margin">Download Image</p>
 		  			<a href="dist/download/go-logo.png" download>Download</a>
 		  		</div>
 
-		  		<div class="col-xs-12 col-sm-6 m-b-4">
+		  		<div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 m-b-4">
 		  			<img src="dist/img/app-store-badge.png" class="m-b-1 w-50">
 		  			<p class="no-margin">Download Image</p>
 		  			<a href="dist/download/app-store-badge.png" download>Download</a>
+		  		</div>
+
+		  		<div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 m-b-4">
+		  			<img src="dist/img/google-play-badge.png" class="m-b-1 w-50">
+		  			<p class="no-margin">Download Image</p>
+		  			<a href="dist/download/google-play-badge.png" download>Download</a>
 		  		</div>
 
 		  	</div>
