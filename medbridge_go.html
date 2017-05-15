@@ -17,7 +17,7 @@
         /* Verticlaly center child elements with flexbox, degrades gracefully */
         .v-center-children { display: block; }
 
-        @media (min-width: 768px) { 
+        @media (min-width: 992px) { 
             .v-center-children {
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -124,6 +124,13 @@
   
         img { max-width: 100%; }
 
+        @media (max-width: 992px) {
+            .experience-text.align-right {
+                text-align: left !important;
+            }
+        }
+
+
         /*Animations*/
 
         .ease-out {
@@ -135,12 +142,12 @@
 
         .fade-right {
             opacity: 0;
-            transform: translate3d(-7%, 0, 0);
+            transform: translate3d(-3%, 0, 0);
         }
 
         .fade-left {
             opacity: 0;
-            transform: translate3d(7%, 0, 0);
+            transform: translate3d(3%, 0, 0);
         }
 
         .fade-up {
@@ -166,76 +173,6 @@
     
             // // Setup Scrollmagic Controller
             var controller = new ScrollMagic.Controller({container: "#medbrige-go-page"});
-
-            // // Toggle a class on scroll
-            // new ScrollMagic.Scene({
-            //     triggerElement:"#go-icons",
-            //     triggerHook: .5
-            // })
-            // .setClassToggle("#go-icons", "testing") // add class toggle
-            // .addTo(controller);
-
-            // // Go Icon Animation
-            // var iconAnimate = new TimelineMax();
-            // iconAnimate
-            //     .from( '.go-icon-1', 1, {css: {'opacity' : '0'}, ease:Linear.easeNone})
-            //     .from( '.go-icon-2', 1, {css: {'opacity' : '0'}, ease:Linear.easeNone})
-            //     .from( '.go-icon-3', 1, {css: {'opacity' : '0'}, ease:Linear.easeNone})
-
-            // new ScrollMagic.Scene ({
-            //     triggerElement: '#go-icons',
-            //     triggerHook: .6,
-            //     duration: '15%'
-            // })
-            // .setTween(iconAnimate).addTo(controller);
-
-            // // Adherence Phone Animation
-            // var adherenceAnimate = new TimelineMax();
-            // adherenceAnimate
-            //     .from( '#adherence-phone', 10, { css: {'opacity' : '0'} , ease: Linear.easeOut } )
-            //     .from( '#adherence-phone', 10, { x : '-20%' , ease: Power4.easeOut }, '-1')
-
-            // new ScrollMagic.Scene({
-            //     triggerElement: '#adherence',
-            //     triggerHook: .5,
-            //     duration: '20%'
-            // })
-            // .setTween(adherenceAnimate).addTo(controller);
-
-            // // Drive Content Animation
-            // new ScrollMagic.Scene ({
-            //     triggerElement: '#drive-outcomes',
-            //     triggerHook: .5,
-            //     duration: '15%'
-            // })
-            // .setTween(TweenMax.from( '.drive-content', 1, {css: {'opacity' : '0'}, ease:Linear.easeNone}))
-            // .addTo(controller);
-
-            // // Whitelabel Phone Animation
-            // var whitelabelAnimate = new TimelineMax();
-            // whitelabelAnimate
-            //     .from( '#whitelabel-phone', 10, { css: {'opacity' : '0'} , ease: Linear.easeOut } )
-            //     .from( '#whitelabel-phone', 10, { x : '20%' , ease: Linear.easeOut }, '-2')
-
-            // new ScrollMagic.Scene({
-            //     triggerElement: '#whitelabel',
-            //     triggerHook: .5,
-            //     duration: '20%'
-            // })
-            // .setTween(whitelabelAnimate).addTo(controller);
-
-            // // Insights Tablet Animation
-            // // var insightsAnimate = new TimelineMax();
-            // // insightsAnimate
-            // //     .from( '#insights-phone', 10, { css: {'opacity' : '0'} , ease: Linear.easeOut } )
-            // //     .from( '#insights-phone', 10, { x : '-10%' , ease: Linear.easeOut }, '-4')
-
-            // // new ScrollMagic.Scene({
-            // //     triggerElement: '#insights',
-            // //     triggerHook: .5,
-            // //     duration: '20%'
-            // // })
-            // // .setTween(insightsAnimate).addTo(controller);
             
             // Adherence icons fade
             new ScrollMagic.Scene({
@@ -300,7 +237,7 @@
 
 <body class="go-resources" id="medbrige-go-page">
 
-<div id="go-hero" class="p-t-12 p-b-12" style="background-image:url(dist/img/go-promo-image.jpg); background-size: cover;">
+<div id="go-hero" class="p-t-12 p-b-12" style="background-image:url(dist/img/medbridge_go/go-promo-image.jpg); background-size: cover;">
     <div class="container">
 
         <div class="row">
@@ -317,10 +254,10 @@
                 <a href="#request-a-demo" class="btn btn-primary btn-lg btn-block mbl m-bot-2">Request a Demo</a>
                 <div class="row m-t-2">
                     <div class="col-xs-6">
-                        <img src="dist/img/app-store-badge.png">
+                        <img src="dist/img/medbridge_go/app-store-badge.png">
                     </div>
                     <div class="col-xs-6">
-                        <img src="dist/img/google-play-badge.png">
+                        <img src="dist/img/medbridge_go/google-play-badge.png">
                     </div>
                 </div>
             </div>
@@ -360,7 +297,7 @@
             <div class="row v-center-children">
 
                 <div id="adherence-phone" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 center m-b-4 ease-out fade-right">
-                    <img src="dist/img/go-straight-ipad-md.gif" class="w-70" style="transform: translate3d(0,0,.);">
+                    <img src="dist/img/medbridge_go/go-straight-ipad-md.gif" class="w-70" style="transform: translate3d(0,0,.);">
                 </div>
 
                 <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0 m-b-4">
@@ -379,7 +316,7 @@
 </div>
 
 <div id="drive-outcomes" style="overflow: hidden; position: relative;">
-    <div id="runner-bg" style="position: absolute; background-image:url(dist/img/runner.jpg); background-size: cover; background-position: center; height: 1400px; top: -100px; width: 100%;"></div>
+    <div id="runner-bg" style="position: absolute; background-image:url(dist/img/medbridge_go/runner.jpg); background-size: cover; background-position: center; height: 1400px; top: -100px; width: 100%;"></div>
         <div class="container p-t-8 p-b-4 white-text">
             <div class="row drive-content ease-out fade-up">
 
@@ -411,7 +348,10 @@
             </div>
         </div>
         <div class="row v-center-children">
-            <div class="col-xs-6 col-md-4 experience-text align-right">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-4 col-md-offset-0 col-md-push-4 center hidden-sm hidden-xs">
+                <img class="w-70 m-b-2" id="experience-phone" src="dist/img/medbridge_go/go-exercise-straight-md.png">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 col-md-pull-4 experience-text align-right">
                 <h2 class="bold">Looping demonstrations</h2>
                 <p class="m-b-2 lg-text">with audio cues guide patients through their exercises and reinforce correct form</p>
                 <h2 class="bold">Specialized education</h2>
@@ -419,10 +359,7 @@
                 <h2 class="bold">Automatic reminders</h2>
                 <p class="m-b-2 lg-text">allow patients to set triggers to complete exercise plans at their convenience</p>
             </div>
-            <div class="col-xs-6 col-md-4 center">
-                <img class="w-70 m-b-2" id="experience-phone" src="dist/img/go-exercise-straight-md.png">
-            </div>
-            <div class="col-xs-6 col-md-4 experience-text">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-4 col-md-offset-0 experience-text">
                 <h2 class="bold">Progress tracking</h2>
                 <p class="m-b-2 lg-text">allows patients to keep track of their activity streaks and exercises completed</p>
                 <h2 class="bold">Clinician reporting</h2>
@@ -438,7 +375,11 @@
         <div class="container">
             <div class="row v-center-children">
 
-                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 m-b-4">
+                <div id="whitelabel-phone" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-push-6 col-md-offset-0 center m-b-4 ease-out fade-left">
+                    <img src="dist/img/medbridge_go/whitelabel.gif" class="w-50">
+                </div>
+
+                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-pull-6 col-md-offset-0 m-b-4">
                     <h3 class="expanding-text bold blue-text m-b-1h">Make it yours.</h3>
                     <p class="lg-text m-b-2">Unlock powerful business opportunity by branding the mobile app for your organization. Extend your marketing reach to elevate your brand and turn your patients into loyal advocates for your practice.</p>
                     <p class="m-b-2">Available with MedBridge Enterprise subscription. Additional fees apply.</p>
@@ -449,39 +390,10 @@
                     </div>
                 </div>
 
-                <div id="whitelabel-phone" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 center m-b-4 ease-out fade-left">
-                    <img src="dist/img/whitelabel.gif" class="w-50">
-                </div>
-
             </div>
         </div>
     </div>
 </div>
-
-<!-- <div id="insights" class="grey p-t-6 p-b-2">
-        <div class="container">
-            <div class="row v-center-children">
-
-                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 center m-b-4">
-                    <img id="insights-phone" src="dist/img/insights-straight.png" class="w-70">
-                </div>
-
-                <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 m-b-4">
-                    <h3 class="expanding-text blue-text bold m-b-1h">Gain powerful insights.</h3>
-                    <p class="lg-text m-b-1">Comprehensive reports of exercise completion for each patient provides more insight into adherence.</p>
-                    <p class="lg-text m-b-1">Looping video demonstrations with audio  cues promote and reinforce desired behaviors.</p>
-                    <p class="lg-text m-b-1">Clinician notifications with exercise difficulty and pain reporting allow you to revise programs as needed.</p>
-                    <p class="lg-text">In-app messaging enables patients to communicate with their provider if they have questions or concerns.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- <?= $this->load->view("marketing/shared/_testimonials", array("testimonial_discipline" => "GO")) ?>
-<?= $this->load->view("marketing/shared/_subscription_callout") ?>
-<?= $this->load->view("marketing/shared/_email_subscribe") ?> -->
 
 </body>
 </html>
