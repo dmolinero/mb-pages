@@ -1,0 +1,214 @@
+<style>
+  
+	/*Helper Classes*/
+
+	/* Verticlaly center child elements with flexbox, degrades gracefully */
+    .v-center-children { display: block; }
+
+    @media (min-width: 768px) { 
+        .v-center-children {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+	  
+	.w-50 {
+	    width: 50%;
+	    margin: 0 auto;
+	}
+
+	.w-70 {
+	    width: 70%;
+	    margin: 0 auto;
+	}
+	 
+	.m-0 {margin: 0;}
+	.m-b-0 { margin-bottom: 0; }
+	.m-b-1 { margin-bottom: 1em; }
+	.m-b-2 { margin-bottom: 2em; }
+	.m-b-3 { margin-bottom: 3em; }
+	.m-b-4 { margin-bottom: 4em; }
+	.m-t-2 { margin-top: 2em; }
+	.m-r-2 { margin-right: 2em; }
+
+	.p-0 { padding: 0; }
+	.p-1 { padding: 1em; }
+	.p-2 { padding: 2em; }
+	.p-t-2 { padding-top: 2em; }
+	.p-t-4 { padding-top: 4em; }
+	.p-t-6 { padding-top: 6em; }
+	.p-b-2 { padding-bottom: 2em; }
+	.p-b-4 { padding-bottom: 4em; }
+	.p-b-6 { padding-bottom: 6em; }
+
+	.border { border: 1px solid #ccc; }
+
+	.border-b { border-bottom: 1px solid #ccc; }
+	  
+	.grey { background: #eaedee; }
+  
+  	.bold { font-weight: 500 !important; }
+
+  	.blue-text { color: #1e78d7; }
+
+  	.white-text { color: #fff; }
+
+		.lg-text {
+		font-size: 1.25em;
+		line-height: 1.5em;
+		font-weight: 300;
+	}
+
+	.inline-block {
+  		display: inline-block;
+  	}
+
+  	.list-style-none {
+  		list-style: none;
+  	}
+
+		
+		/*Element Styles*/
+
+	a { cursor: pointer; }
+
+	img { max-width: 100%; }
+
+</style>
+
+<div class="p-t-4 p-b-4 border-b" style="background: url(<?= cloudbridge_prefix("/images/redesign/resources/go/faqs-hero.jpg")?>);">
+  	<div class="container">
+  		<h1 class="center white-text">MedBridge GO Resources</h1>
+  	</div>
+	</div>
+
+<div class="p-t-2 p-b-2 grey border-b">
+  	<div class="container">
+		<ul class="p-0 m-0">
+			<li class="list-style-none inline-block m-r-2"><a href="go-assets.html" alt="Marketing Assets">Marketing Assets</a></li>
+			<li class="list-style-none inline-block m-r-2"><a href="go-clinician-training.html" alt="Clinical Training">Clinical Training</a></li>
+			<li class="list-style-none inline-block m-r-2">FAQ</li>
+		</ul>
+  	</div>
+</div>
+<div class="p-t-6 p-b-2 border-b">
+  	<div class="container">
+  		<div class="row v-center-children">
+		  	<div class="col-xs-12 col-sm-6 m-b-4">
+		  		<h1 class="m-b-1">Clinician Training</h1>
+		  		<p class="lg-text m-b-1">MedBridge GO is the ultimate solution for keeping your patients motivated and engaged with their care between clinical visits. By automatically converting your prescribed HEP into achievable daily doses, the mobile app saves you valuable time while drastically improving the home exercise experience.</p>
+		  		<p class="lg-text">Activation is quick and easy-patients simply download the app, enter the access code you assign, and get moving!</p>
+		  	</div>
+		  	<div class="col-xs-12 col col-sm-6 hidden-sm hidden-xs center m-b-4">
+		  		<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/go-home-tablet-sm.gif")?>" class="w-60">
+		  	</div>
+		</div>
+  	</div>
+</div>
+<div class="grey p-t-6 p-b-2 border-b">
+	<div class="container">
+		<h2 class="m-b-2">How it Works</h2>
+		<div class="row">
+		  	<div class="col-sm-12 col-md-6 m-b-4">
+		  		<h4 class="m-b-1 blue-text">1. Clinician builds patient HEP</h4>
+		  		<p class="m-b-1 lg-text">Create your patient's home exercise program in the MedBridge HEP builder and assign the proper parameters (sets, reps, hold, weekly/daily count, etc).</p>
+		  		<div class="center">
+		  			<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/builder.png")?>" alt="hep builder" class="w-70">
+		  		</div>
+		  	</div>
+		  	<div class="col-sm-12 col-md-6 m-b-4">
+		  		<h4 class="m-b-1 blue-text">2. Reps convert to daily dosage</h4>
+		  		<p class="m-b-1 lg-text">MedBridge GO converts your assigned exercises and selected parameters and will calculate the appropriate dosage into a daily program for easier adherence.</p>
+		  		<p class="m-b-1">*Pro Tip: Clinicians that create programs with duration of 8 minutes or less have higher activation and engagement rates!</p>
+		  		<div class="center">
+		  			<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/8-minute-session.png")?>" alt="8 minute session" class="w-70">
+		  		</div>
+	  		</div>
+	  	</div>
+	</div>
+</div>
+<div class="grey  p-t-6 p-b-2 border-b">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 m-b-4">
+		  		<h4 class="m-b-1 blue-text">3. Clinician shares HEP with patient</h4>
+		  		<p class="m-b-1 lg-text">Share the HEP you've created with your patient via text, email, or print. This message will include your patient's unique HEP access code.</p>
+		  		<div class="center">
+		  			<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/hep-builder-zoom.png")?>" alt="hep builder zoom" class="w-70">
+		  		</div>
+	  		</div>
+	  		<div class="col-sm-12 col-md-6 m-b-4">
+		  		<h4 class="m-b-1 blue-text">4. Patient activates and begins</h4>
+		  		<p class="m-b-1 lg-text">Your patient will be prompted to download the app and enter their unique HEP access code to begin.</p>
+		  		<div class="center">
+		  			<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/download-prompt.png")?>" alt="download image" class="w-70">
+		  		</div>
+	  		</div>
+	  	</row>
+	</div>
+</div>
+<div class="p-t-6 p-b-2 border-b">
+	<div class="container">
+		<div class="row">
+			<h2 class="m-b-1">The Patient Expereince</h2>
+			<div class="m-b-3">
+				<a href="go-faqs.html" class="button">View Patient FAQ</a>
+			</div>
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/go-exercise-straight-sm.png")?>" alt="exercise screen" class="preview-img m-b-2 w-70">
+				<h4>Exercises</h4>
+				<p class="lg-text">Patients can watch interactive HD videos with easy-to-follow instructions.</p>
+			</div>
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/go-condition-straight-sm.png")?>" alt="resources screen" class="preview-img m-b-2 w-70">
+				<h4>Resources</h4>
+				<p class="lg-text">Patients can gain a deeper understanding of their condition with patient education.</p>
+			</div>
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="dist/img/go-rewards-straight-sm.png" alt="activity screen" class="preview-img m-b-2 w-70">
+				<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/go-rewards-straight-sm.png")?>" alt="activity screen" class="preview-img m-b-2 w-70">
+				<h4>My Activity</h4>
+				<p class="lg-text">Patients can track activity and progress throughout treatment and post care.</p>
+			</div>
+			<div class="col-xs-6 col-md-3 center m-b-4">
+				<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/go-reminders-straight-sm.png")?>" alt="reminder screen" class="preview-img m-b-2 w-70">
+				<h4>Reminders</h4>
+				<p class="lg-text">Patients can set reminders to keep on track with their goals for recovery.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="p-t-6 p-b-2 border-b center">
+	<div class="container">
+		<h2 class="m-b-1">Make It Yours</h2>
+  		<div class="row">
+  			<div class="col-xs-10 col-xs-offset-1 center">
+				<p class="lg-text m-b-2">Unlock powerful business opportunity by branding the mobile app for your organization! Extend your marketing reach to establish top-of-mind awareness and build lifelong relationships with your patients.
+				In addition to having your logo on the app, we can also provide you with custom branded marketing assets to streamline the patient activation process.</p>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 center">
+				<img src="<?= cloudbridge_prefix("/images/redesign/resources/go/whitelabel.png")?>" alt="resources screen" class="preview-img m-b-2">
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 center">
+				<p class="lg-text m-b-1 bold">Contact MedBridge Support today to learn more:</p>
+					<p class="lg-text m-b-1">support@medbridgeed.com<br />
+					(206) 216-5003</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="p-t-6 p-b-6 border-b grey">
+  	<div class="container center">
+	  	<h1 class="m-b-1 xl-text"><span class="bold">Questions?</span> We can help.</h1>
+	  	<p>
+			<i class="material-icons">phone</i>
+	  		<span class="m-r-2">206.216.5003</span>
+	  		<i class="material-icons">language</i>
+	  		<span>support@medbridgeed.com</span>
+	  	</p>
+	</div>
+</div>
